@@ -2,7 +2,7 @@
   "name": "svp-project",
   "version": "1.0.0",
   "description": "Smart Vibration Platform for LOP",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mr-harshtyagi/SVP-Project/issues"
   },
-  "homepage": "https://github.com/mr-harshtyagi/SVP-Project#readme"
+  "homepage": "https://github.com/mr-harshtyagi/SVP-Project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

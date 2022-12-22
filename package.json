@@ -1,0 +1,19 @@
+{
+  "name": "svp-project",
+  "version": "1.0.0",
+  "description": "Smart Vibration Platform for LOP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-harshtyagi/SVP-Project.git"
+  },
+  "author": "mr-harshtyagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-harshtyagi/SVP-Project/issues"
+  },
+  "homepage": "https://github.com/mr-harshtyagi/SVP-Project#readme"
+}

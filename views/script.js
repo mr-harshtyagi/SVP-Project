@@ -72,10 +72,13 @@ function handleMotorClick() {
   if (motorButton.innerText === "Start") {
     motorButton.className = "btn btn-danger";
     motorButton.innerText = "Stop";
+    smaButton.disabled = false;
+    mrButton.disabled = false;
   } else {
-    console.log("Case false");
     motorButton.className = "btn btn-success";
     motorButton.innerText = "Start";
+    smaButton.disabled = true;
+    mrButton.disabled = true;
   }
 }
 
@@ -107,4 +110,10 @@ function handleMrClick() {
     mrButton.className = "btn btn-success";
     mrButton.innerText = "Activate";
   }
+}
+
+// keep sma and mr actuators disbled if motor is off
+if (motorButton.innerText === "Start") {
+  smaButton.disabled = true;
+  mrButton.disabled = true;
 }

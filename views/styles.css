@@ -13,3 +13,8 @@
     font-weight: 500;
 
 }
+
+#status{
+    color: green;
+    font-weight: bold;
+}

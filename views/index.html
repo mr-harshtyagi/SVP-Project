@@ -1,0 +1,38 @@
+<html lang="en" id="html">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SVP</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="./views/script.js" async></script>
+  </head>
+
+  <body class="p-3 m-0 border-0 bd-example">
+    <!-- Example Code -->
+
+    <div id="liveAlertPlaceholder">
+      <div>
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <div>Nice, you triggered this alert message!</div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">
+      Show live alert
+    </button>
+
+    <!-- End Example Code -->
+  </body>
+</html>

@@ -1,11 +1,15 @@
 const express = require("express");
-const app = express();
+const bodyParser = require("body-parser");
 
-//get function for home route localhost:3000
+const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname));
+
+// Default Route
 app.get("/", function (req, res) {
-  res.send("<h1>Hello World</h1>");
+  res.sendFile(__dirname + "/views/index.html");
 });
-//get function for home route localhost:3000/home
+
 app.get("/home", function (req, res) {
   res.send("Hello Home");
 });

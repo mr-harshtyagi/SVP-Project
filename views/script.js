@@ -1,9 +1,10 @@
 // google charts
-// ACCELEROMETER CHART
+
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawAccelerometerChart);
 google.charts.setOnLoadCallback(drawTemperatureChart);
 
+// ACCELEROMETER CHART
 function drawAccelerometerChart() {
   var data = google.visualization.arrayToDataTable([
     ["Time (s)", "Vibration Amplitude (m/s^2)"],
@@ -130,9 +131,8 @@ function drawTemperatureChart() {
   chart.draw(data, options);
 }
 
-// Temperrature value
+// Temperature value
 const temperatureValue = document.getElementById("temperature");
-temperatureValue.innerHTML = "20";
 
 // motor-control
 const motorButton = document.getElementById("motor-control");

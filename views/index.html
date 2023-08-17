@@ -10,8 +10,8 @@
     />
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Scripts -->
-    <script src="./views/script.js" async></script>
-    <script src="https://www.gstatic.com/charts/loader.js" async></script>
+    <script src="https://www.gstatic.com/charts/loader.js" ></script>
+    <script src="./views/script.js" ></script>
     <link rel="stylesheet" href="./views/styles.css" />
   </head>
 
@@ -22,9 +22,10 @@
         SVP (Smart Vibration Platform)
       </h1>
     </div>
-    <!-- Panel -->
+
     <div class="container text-center">
       <div class="row">
+        <!-- Panel -->
         <div class="col">
           <div class="controls">
             <h2 style="color: #395144; font-weight: bold">Control Panel</h2>
@@ -61,9 +62,6 @@
               >
             </p>
           </div>
-        </div>
-
-        <div class="col">
           <div class="system-parameters">
             <h2 style="color: #395144; font-weight: bold">System Parameters</h2>
             <p>
@@ -74,22 +72,25 @@
               Max. Vibration Amplitude :
               <span id="acceleration">3.5 m/s^2</span>
             </p>
-            <p>SMA Wire Temerature : <span id="temperature">30.0</span>°C</p>
+            <p>
+              SMA Wire Temerature : <strong id="temperature">30.0</strong>°C
+            </p>
+          </div>
+        </div>
+        <!-- Charts -->
+        <div class="col">
+          <div class="text-center">
+            <h3 style="color: grey">Accelerometer Data</h3>
+            <div id="accelerometer_chart_div"></div>
+          </div>
+          <div class="text-center mt-5">
+            <h3 style="color: grey">Temperature Data</h3>
+            <div id="temperature_chart_div"></div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Charts -->
-    <div class="text-center mt-5">
-      <h3 style="color: grey">Accelerometer Data</h3>
-      <div id="accelerometer_chart_div"></div>
-    </div>
 
-    <div class="text-center mt-5">
-      <h3 style="color: grey">Temperature Data</h3>
-      <div id="temperature_chart_div"></div>
-    </div>
-
-    <!-- End Example Code -->
+    <!-- End of Code -->
   </body>
 </html>
